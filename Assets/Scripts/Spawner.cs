@@ -15,7 +15,7 @@ public class Spawner : MonoBehaviour
     public float spawnInterval = 3f;   // Time between spawns
     // Removed the old 'spawnRadius' since we now have min/max
 
-    public float balloonSpawnChance = 0.3f; // 40% chance balloon, 60% skeleton
+    public float balloonSpawnChance = 0.4f; // 40% chance balloon, 60% skeleton
 
     private float timer;
 
