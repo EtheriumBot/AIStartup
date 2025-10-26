@@ -1,3 +1,5 @@
+using NUnit.Framework.Internal;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Shooting : MonoBehaviour
@@ -5,24 +7,34 @@ public class Shooting : MonoBehaviour
 
     public GameObject projectilePrefab;
 
+    private int testTime;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Instantiate(projectilePrefab, OVRInput.GetLocalControllerPosition(OVRInput.Controller.LTouch), OVRInput.GetLocalControllerRotation(OVRInput.Controller.LTouch));
+        
+        InstantiateArrow(OVRInput.Controller.LTouch);
+        InstantiateArrow(OVRInput.Controller.RTouch);
 
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch))
+        /*
+        if (testTime % 20 == 0)
         {
             Instantiate(projectilePrefab, OVRInput.GetLocalControllerPosition(OVRInput.Controller.LTouch), OVRInput.GetLocalControllerRotation(OVRInput.Controller.LTouch));
         }
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
+        testTime++;*/
+    }
+
+    void InstantiateArrow(OVRInput.Controller controller)
+    {
+        Vector3 posToSpawn = OVRInput.GetLocalControllerPosition(controller) + new Vector3(0, 0.11f, 0);
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, controller))
         {
-            Instantiate(projectilePrefab, OVRInput.GetLocalControllerPosition(OVRInput.Controller.RTouch), OVRInput.GetLocalControllerRotation(OVRInput.Controller.RTouch));
+            Instantiate(projectilePrefab, posToSpawn, OVRInput.GetLocalControllerRotation(controller));
         }
     }
 }
