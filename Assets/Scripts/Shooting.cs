@@ -21,12 +21,12 @@ public class Shooting : MonoBehaviour
         InstantiateArrow(OVRInput.Controller.LTouch);
         InstantiateArrow(OVRInput.Controller.RTouch);
 
-        /*
+        
         if (testTime % 20 == 0)
         {
             Instantiate(projectilePrefab, OVRInput.GetLocalControllerPosition(OVRInput.Controller.LTouch), OVRInput.GetLocalControllerRotation(OVRInput.Controller.LTouch));
         }
-        testTime++;*/
+        testTime++;
     }
 
     void InstantiateArrow(OVRInput.Controller controller)

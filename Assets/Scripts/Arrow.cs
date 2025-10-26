@@ -47,11 +47,6 @@ public class Arrow : MonoBehaviour
 
     }
 
-    void Update()
-    {
-        transform.position += transform.forward * speed * Time.deltaTime;
-    }
-
     // Use OnCollisionEnter for physics-based impacts
     private void OnCollisionEnter(Collision collision)
     {

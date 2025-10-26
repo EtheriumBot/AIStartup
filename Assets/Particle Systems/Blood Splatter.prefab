@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8223154875143155259}
   - component: {fileID: 4150166681857571851}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Blood Splatter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
