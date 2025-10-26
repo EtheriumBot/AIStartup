@@ -44,8 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a2112f93134a304bb2fe41c2115d3be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minSpawnRadius: 10
+  maxSpawnRadius: 30
   skeletonPrefab: {fileID: 4833839272554325453, guid: b0b88b62ff91fa34aa42bf1528df60bf, type: 3}
   balloonPrefab: {fileID: 770722418436880018, guid: ed91329b4233843468a404788e16badd, type: 3}
   spawnInterval: 3
-  spawnRadius: 10
   balloonSpawnChance: 0.4
