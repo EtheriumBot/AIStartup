@@ -1,0 +1,12 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/solobuttonstyle.uss?fileID=7433441132597879392&amp;guid=c22e86c8e0d04416990a2f764362deb8&amp;type=3#solobuttonstyle" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Button text="Combatants" name="Button" class="buttonstyle" style="height: 36px; width: 347px; background-color: rgb(255, 6, 30); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; transition-duration: 0.5s; color: rgb(255, 255, 255);" />
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:Button text="Witch Wrestle" class="buttonstyle" style="height: 123px; width: 346px; background-color: rgb(169, 12, 224); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; transition-duration: 0.5s; color: rgb(255, 255, 255);" />
+            <ui:Button text="Barbarian Bash" class="buttonstyle" style="height: 131px; width: 348px; background-color: rgb(221, 236, 3); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; transition-duration: 0.5s;" />
+            <ui:Button text="Goblin Grapple " class="buttonstyle" style="height: 119px; width: 349px; background-color: rgb(97, 192, 63); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; transition-duration: 0.5s;" />
+            <ui:Button text="Home" class="buttonstyle" style="height: 37px; width: 351px; background-color: rgb(66, 128, 255); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; transition-duration: 0.5s; color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

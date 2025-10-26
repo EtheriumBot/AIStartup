@@ -55,7 +55,7 @@ public class Spawner : MonoBehaviour
         if (prefabToSpawn == balloonPrefab)
         {
             // Note: If your balloon is flying, you might want to consider the terrain height here.
-            randomPos = new Vector3(randomPos.x, randomPos.y + 2, randomPos.z);
+            randomPos = new Vector3(randomPos.x, randomPos.y + 10, randomPos.z);
             Instantiate(prefabToSpawn, randomPos, Quaternion.identity);
         }
         else

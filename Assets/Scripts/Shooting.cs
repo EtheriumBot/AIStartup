@@ -31,7 +31,7 @@ public class Shooting : MonoBehaviour
 
     void InstantiateArrow(OVRInput.Controller controller)
     {
-        Vector3 posToSpawn = OVRInput.GetLocalControllerPosition(controller) + new Vector3(0, 0.11f, 0);
+        Vector3 posToSpawn = OVRInput.GetLocalControllerPosition(controller) + new Vector3(0, 0.15f, 0);
         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, controller))
         {
             Instantiate(projectilePrefab, posToSpawn, OVRInput.GetLocalControllerRotation(controller));
