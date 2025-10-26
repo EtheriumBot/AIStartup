@@ -12,7 +12,7 @@ public class DeductHealthOnCollision : MonoBehaviour
     void Start()
     {
         // Find the player object by tag and get the PlayerHealth component from it
-        GameObject playerObject = GameObject.FindWithTag("Player");
+        GameObject playerObject = GameObject.Find("Hitbox");
         if (playerObject != null)
         {
             playerHealth = playerObject.GetComponent<PlayerHealth>();
